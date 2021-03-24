@@ -1,0 +1,17 @@
+name: vuepress-starter
+on: [push]
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+
+      - name: vuepress-deploy
+        uses: lionng/vuepress-starter@master
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+#          TARGET_REPO:  默认当前仓库
+#          TARGET_BRANCH: master  默认 gh-pages
+          BUILD_SCRIPT: yarn && yarn docs:build
+          BUILD_DIR: docs/.vuepress/dist/

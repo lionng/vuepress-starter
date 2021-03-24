@@ -48,7 +48,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
           branch: gh-pages
-          folder: ./docs/.vuepress/dist
+          folder: docs/.vuepress/dist
           token: ${{ secrets.ACCESS_TOKEN }}
 #          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           # 部署到 gh-pages 分支

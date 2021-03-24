@@ -1,7 +1,7 @@
 module.exports = {
     // port: '8095',  //项目端口
     base: '/vuepress-starter/',
-    dest: 'public',
+    // dest: 'public',  //指定 vuepress build 的输出目录 默认：docs/.vuepress/dist/
     locales: {
         // 键名是该语言所属的子路径
         // 作为特例，默认语言可以使用 '/' 作为其路径。

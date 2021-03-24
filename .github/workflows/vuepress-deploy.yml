@@ -1,20 +1,26 @@
 name: vuepress-starter
+# 触发条件：在 push 到 master 分支后
 on:
   push:
     branches:
       - master
+
+# 任务
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
+      # 拉取代码
       - name: Checkout
-        uses: actions/checkout@master
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
 
       - name: Build and Deploy
-        uses: lionng/vuepress-starter@master
-        env:
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          TARGET_REPO: lionng/vuepress-deploy # 默认当前仓库
+          TARGET_REPO: lionng/vuepress-starter # 默认当前仓库
           TARGET_BRANCH: gh-pages  # 默认 gh-pages
           BUILD_SCRIPT: yarn && yarn docs:build
           BUILD_DIR: docs/.vuepress/dist/

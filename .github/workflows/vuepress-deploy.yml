@@ -49,7 +49,7 @@ jobs:
         with:
           branch: gh-pages
           folder: docs/.vuepress/dist
-          token: ${{ secrets.ACCESS_TOKEN }}
+          ssh-key: ${{ secrets.ACCESS_TOKEN }}
 #          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           # 部署到 gh-pages 分支
 #          BRANCH: gh-pages

@@ -1,0 +1,16 @@
+# GitHub Pages and Travis CI https://vuepress.vuejs.org/zh/guide/deploy.html#github-pages-and-travis-ci
+language: node_js
+node_js:
+  - lts/*
+install:
+  - yarn install # npm ci
+script:
+  - yarn docs:build # npm run docs:build
+deploy:
+  provider: pages
+  skip_cleanup: true
+  local_dir: docs/.vuepress/dist
+  github_token: 63d57e7a2b44ac203f8904358f5495f8b25cf360 # 在 GitHub 中生成，用于允许 Travis 向你的仓库推送代码。在 Travis 的项目设置页面进行配置，设置为 secure variable
+  keep_history: true
+  on:
+    branch: master

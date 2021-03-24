@@ -1,6 +1,6 @@
 module.exports = {
     // port: '8095',  //项目端口
-    base: '/vuepress-starter/',
+    // base: '/vuepress-starter/',
     dest: 'public',
     locales: {
         // 键名是该语言所属的子路径

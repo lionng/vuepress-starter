@@ -11,16 +11,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # 拉取代码
-      - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          persist-credentials: false
+      - name: Checkout 🛎️
+          uses: actions/checkout@v2.3.1
 
       - name: Build and Deploy
-        uses: JamesIves/github-pages-deploy-action@releases/v3
+        uses: JamesIves/github-pages-deploy-action@4.1.0
         with:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          TARGET_REPO: lionng/vuepress-starter # 默认当前仓库
+#          TARGET_REPO: lionng/vuepress-starter # 默认当前仓库
           TARGET_BRANCH: gh-pages  # 默认 gh-pages
           BUILD_SCRIPT: yarn && yarn docs:build
           BUILD_DIR: docs/.vuepress/dist/

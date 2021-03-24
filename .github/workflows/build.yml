@@ -48,7 +48,7 @@ jobs:
       - name: Deploy to GitHub Pages
         uses: lionng/vuepress-starter
         with:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          ACCESS_TOKEN: ${{ secrets.vuepress-starter }}
           # 部署到 gh-pages 分支
           BRANCH: gh-pages
           # 部署目录为 VuePress 的默认输出目录

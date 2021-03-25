@@ -1,5 +1,8 @@
 ---
 home: true
+heroImage: /assets/img/logo.png
+heroText: PHOENIX
+tagline: fire
 actionText: 梦开始的地方! →
 actionLink: /zh/base/
 meta:

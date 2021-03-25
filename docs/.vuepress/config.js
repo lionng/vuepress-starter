@@ -1,5 +1,12 @@
 module.exports = {
-    // port: '8095',  //项目端口
+    // algolia: {
+    //     apiKey: '<API_KEY>',
+    //     indexName: '<INDEX_NAME>'
+    // },
+    //插件  https://vuepress.vuejs.org/zh/plugin/
+    plugins: ['@vuepress/pwa','@vuepress/back-to-top','@vuepress/nprogress'],
+    port: '8095',  //项目端口
+    //如果你打算将你的网站部署到 https://foo.github.io/bar/，那么 base 的值就应该被设置为 "/bar/"
     base: '/vuepress-starter/',
     // dest: 'public',  //指定 vuepress build 的输出目录 默认：docs/.vuepress/dist/
     locales: {
@@ -17,6 +24,18 @@ module.exports = {
         }
     },
     themeConfig: {
+        // 假定是 GitHub. 同时也可以是一个完整的 GitLab URL
+        repo: 'lionng/vuepress-starter',
+        // 自定义仓库链接文字。默认从 `themeConfig.repo` 中自动推断为
+        // "GitHub"/"GitLab"/"Bitbucket" 其中之一，或是 "Source"。
+        // repoLabel: '查看源码',
+        // 以下为可选的编辑链接选项
+        docsDir: 'docs',
+        // 默认是 false, 设置为 true 来启用
+        editLinks: true,
+        // 默认为 "Edit this page"
+        // editLinkText: '帮助我们改善此页面！',
+
         smoothScroll: true,  //页面滚动
         sidebar: 'auto',  //侧边栏 自动生成
         logo: '/assets/img/logo.png',  //logo
@@ -33,10 +52,10 @@ module.exports = {
                         buttonText: "Refresh"
                     }
                 },
-                algolia: {},
+                // algolia: {},
                 nav: [
-                    {text: 'Google', link: 'https://www.google.com/', target: '_self', rel: ''},
-                    {text: 'Google Translate', link: 'https://translate.google.cn/', target: '_self', rel: ''}
+                    // {text: 'Google', link: 'https://www.google.com/', target: '_self', rel: ''},
+                    // {text: 'Google Translate', link: 'https://translate.google.cn/', target: '_self', rel: ''}
                     // {text: 'Nested', link: '/nested/', ariaLabel: 'Nested'}
                 ],
                 // sidebar: 'auto',
@@ -61,12 +80,20 @@ module.exports = {
                     }
                 },
                 // 当前 locale 的 algolia docsearch 选项
-                algolia: {},
+                // algolia: {},
                 nav: [
-                    {text: '工作', link: '/zh/work/'},
-                    {text: '基础', link: '/zh/base/'}
+                    // {text: '指南', link: '/zh/guide/'},
+                    {text: '基础', link: '/zh/base/'},
+                    {text: '工作', link: '/zh/work/'}
                 ],
-                // sidebar: 'auto',
+                // sidebar: {
+                //     '/zh/guide/': [
+                //         '',
+                //         'two',
+                //         'three'
+                //     ],
+                //     '/zh/*/': 'auto',
+                // }
                 // {
                 // '/zh/': [/* ... */],
                 // '/zh/work/': [/* ... */]

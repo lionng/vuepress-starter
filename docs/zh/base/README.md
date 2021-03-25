@@ -34,3 +34,6 @@
 
 ### github action CI
 [https://segmentfault.com/a/1190000039656896](https://segmentfault.com/a/1190000039656896)
+
+### 插件
+[https://vuepress.vuejs.org/zh/plugin/](https://vuepress.vuejs.org/zh/plugin/)

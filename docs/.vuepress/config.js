@@ -21,7 +21,7 @@ module.exports = {
     plugins: ['@vuepress/pwa', '@vuepress/back-to-top', '@vuepress/nprogress', [
         '@vuepress/google-analytics',
         {
-            'ga': 'G-QSP8RWC1WH' // UA-00000000-0
+            'ga': 'UA-124222542-1' // UA-00000000-0
         }
     ]],
     port: '8095',  //项目端口

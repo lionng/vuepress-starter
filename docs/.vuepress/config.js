@@ -1,10 +1,29 @@
 module.exports = {
+    head: [
+        ['link', { rel: 'icon', href: '/assets/img/logo.png' }],
+        ['link', { rel: 'manifest', href: '/manifest.json' }],  //https://developer.mozilla.org/zh-CN/docs/Web/Manifest
+        ['meta', { name: 'theme-color', content: '#3eaf7c' }],
+        ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
+        ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }],
+        ['link', { rel: 'apple-touch-icon', href: '/assets/img/logo.png' }],
+        ['link', { rel: 'mask-icon', href: '/icons/safari-pinned-tab.svg', color: '#3eaf7c' }],
+        ['meta', { name: 'msapplication-TileImage', content: '/assets/img/logo.png' }],
+        ['meta', { name: 'msapplication-TileColor', content: '#000000' }]
+    ],
+    markdown: {
+        lineNumbers: true
+    },
     // algolia: {
     //     apiKey: '<API_KEY>',
     //     indexName: '<INDEX_NAME>'
     // },
     //插件  https://vuepress.vuejs.org/zh/plugin/
-    plugins: ['@vuepress/pwa','@vuepress/back-to-top','@vuepress/nprogress'],
+    plugins: ['@vuepress/pwa', '@vuepress/back-to-top', '@vuepress/nprogress', [
+        '@vuepress/google-analytics',
+        {
+            'ga': 'G-QSP8RWC1WH' // UA-00000000-0
+        }
+    ]],
     port: '8095',  //项目端口
     //如果你打算将你的网站部署到 https://foo.github.io/bar/，那么 base 的值就应该被设置为 "/bar/"
     base: '/vuepress-starter/',
@@ -82,10 +101,17 @@ module.exports = {
                 // 当前 locale 的 algolia docsearch 选项
                 // algolia: {},
                 nav: [
-                    {text: 'VuePress官网', link: 'https://vuepress.vuejs.org/zh/'},
                     // {text: '指南', link: '/zh/guide/'},
                     {text: '基础', link: '/zh/base/'},
                     // {text: '工作', link: '/zh/work/'}
+                    {
+                        text: '了解更多',
+                        items: [
+                            {text: 'hugo博客', link: 'https://lionng.github.io/'},
+                            {text: 'csdn博客', link: 'https://blog.csdn.net/zhang__liuchen'},
+                            {text: 'VuePress官网', link: 'https://vuepress.vuejs.org/zh/'},
+                        ]
+                    }
                 ],
                 // sidebar: {
                 //     '/zh/guide/': [

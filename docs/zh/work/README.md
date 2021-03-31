@@ -1,6 +1,9 @@
 # work
-## [develop](./fire/develop)
-开发功能说明
+## develop
+### [zj_develop](./fire/zj_develop)
+灼见开发功能说明
+### [gd_develop](./fire/gd_develop)
+GD开发功能说明
 
 ## [project bug](./fire/projectBug)
 技术项目架构问题

@@ -1,4 +1,7 @@
 module.exports = {
+    markdown: {
+        lineNumbers: true
+    },
     // algolia: {
     //     apiKey: '<API_KEY>',
     //     indexName: '<INDEX_NAME>'

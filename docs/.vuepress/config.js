@@ -101,6 +101,7 @@ module.exports = {
                 // 当前 locale 的 algolia docsearch 选项
                 // algolia: {},
                 nav: [
+                    {text: 'VuePress官网', link: 'https://vuepress.vuejs.org/zh/'},
                     // {text: '指南', link: '/zh/guide/'},
                     {text: '基础', link: '/zh/base/'},
                     // {text: '工作', link: '/zh/work/'}

@@ -37,3 +37,17 @@
 
 ### 插件
 [https://vuepress.vuejs.org/zh/plugin/](https://vuepress.vuejs.org/zh/plugin/)
+
+### 代码 行号
+``` js
+module.exports = {
+  markdown: {
+    lineNumbers: true
+  }
+}
+```
+
+### page
+::: details page属性
+{{ $page }}
+:::

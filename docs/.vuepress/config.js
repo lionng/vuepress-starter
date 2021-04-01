@@ -104,7 +104,6 @@ module.exports = {
                     {text: 'VuePress官网', link: 'https://vuepress.vuejs.org/zh/'},
                     // {text: '指南', link: '/zh/guide/'},
                     {text: '基础', link: '/zh/base/'},
-                    // {text: '工作', link: '/zh/work/'}
                     {
                         text: '了解更多',
                         items: [

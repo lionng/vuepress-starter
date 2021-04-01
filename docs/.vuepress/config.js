@@ -102,7 +102,7 @@ module.exports = {
                 // algolia: {},
                 nav: [
                     {text: 'VuePress官网', link: 'https://vuepress.vuejs.org/zh/'},
-                    // {text: '指南', link: '/zh/guide/'},
+                    {text: '指南', link: '/zh/guide/'},
                     {text: '基础', link: '/zh/base/'},
                     {
                         text: '了解更多',
@@ -113,14 +113,13 @@ module.exports = {
                         ]
                     }
                 ],
-                // sidebar: {
-                //     '/zh/guide/': [
-                //         '',
-                //         'two',
-                //         'three'
-                //     ],
-                //     '/zh/*/': 'auto',
-                // }
+                sidebar: {
+                    '/zh/guide/': [
+                        '',
+                        'two',
+                        'three'
+                    ],
+                }
                 // {
                 // '/zh/': [/* ... */],
                 // '/zh/work/': [/* ... */]

@@ -21,7 +21,7 @@ module.exports = {
     plugins: ['@vuepress/pwa', '@vuepress/back-to-top', '@vuepress/nprogress'],
     port: '8095',  //项目端口
     //如果你打算将你的网站部署到 https://foo.github.io/bar/，那么 base 的值就应该被设置为 "/bar/"
-    base: '/vuepress-starter/',
+    // base: '/vuepress-starter/',
     // dest: 'public',  //指定 vuepress build 的输出目录 默认：docs/.vuepress/dist/
     locales: {
         // 键名是该语言所属的子路径
@@ -98,8 +98,8 @@ module.exports = {
                 nav: [
                     // {text: 'VuePress官网', link: 'https://vuepress.vuejs.org/zh/'},
                     // {text: '指南', link: '/zh/guide/'},
-                    {text: '基础', link: '/zh/base/'},
-                    {text: '工作', link: '/zh/work/'}
+                    // {text: '基础', link: '/zh/base/'},
+                    {text: '工作', link: '/zh/work/fire/'}
                     // {
                     //     text: '了解更多',
                     //     items: [
@@ -109,14 +109,19 @@ module.exports = {
                     //     ]
                     // }
                 ],
-                // sidebar: {
-                //     '/zh/guide/': [
-                //         '',
-                //         'two',
-                //         'three'
-                //     ],
-                //     '/zh/*/': 'auto',
-                // }
+                sidebar: {
+                    '/zh/guide/': [
+                        '',
+                        'two',
+                        'three'
+                    ],
+                    '/zh/work/fire/': [
+                        'zj_develop',
+                        'gd_develop',
+                        'projectBug',
+                        'docking',
+                    ]
+                }
                 // {
                 // '/zh/': [/* ... */],
                 // '/zh/work/': [/* ... */]

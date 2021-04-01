@@ -1,4 +1,8 @@
-# 灼见
+---
+prev: zj_develop
+next: ./projectBug
+---
+# gd
 ## 版本更新内容
 ### commit_#
 1. 媒体权限节点  
@@ -9,6 +13,3 @@
 INSERT INTO tb_role_menu(role_id,menu_id) VALUES(1,505003)
 ```
 和灼见`commit_#16992`功能一致
-
-
-## [返回到上一级](../)

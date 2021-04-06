@@ -28,3 +28,4 @@ package-lock.json
 yarn.lock
 
 /docs/.vuepress/dist/
+/.gradle/
